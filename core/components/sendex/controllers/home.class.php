@@ -4,6 +4,9 @@
  * The home manager controller for Sendex.
  *
  */
+
+//коммент тест
+
 class SendexHomeManagerController extends modExtraManagerController
 {
     /** @var Sendex $Sendex */
