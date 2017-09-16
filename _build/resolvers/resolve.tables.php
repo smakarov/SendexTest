@@ -13,7 +13,11 @@ if ($transport->xpdo) {
             $modx->addPackage('sendex', $modelPath);
 
             $manager = $modx->getManager();
-            $objects = array();
+            $objects = array(
+            	'sxNewsletter',
+				'sxSubscriber',
+				'sxQueue'
+			);
             $schemaFile = MODX_CORE_PATH . 'components/sendex/model/schema/sendex.mysql.schema.xml';
             if (is_file($schemaFile)) {
                 $schema = new SimpleXMLElement($schemaFile, 0, true);
